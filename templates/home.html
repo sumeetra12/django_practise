@@ -18,9 +18,30 @@
         </p>
         <button>Contact us</button>
 
-        <!-- accessing dynamic data -->
+        {% if isActive %}
 
-        <h1>todays date is {{date}}</h1>
+        <div>
+
+            <!-- accessing dynamic data -->
+
+            <h1>todays date is {{date}}</h1>
+            <h1>Name is {{name}}</h1>
+            <hr>
+            <h1>Student data</h1>
+            <h2>Student name: {{student_data.student_name}}</h2>
+            <h2>Student college: {{student_data.student_college}}</h2>
+            <h2>Student location: {{student_data.student_city}}</h2>
+        </div>
+
+        <hr>
+        <h1>Favorite programs</h1>
+
+        {% for p in list_of_programs %}
+
+        <h1>{{p}}</h1>
+
+        {% endfor %}
+    {% endif %}
     </div>
     
 </body>
