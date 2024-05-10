@@ -12,7 +12,7 @@ def home(request):
         'WAP to print all prime numbers from 1 to 100'
     ]
     student = {
-        'student_name': "Sumitra Maharjan",
+        'student_name': "Sumeetra Maharjan",
         'student_college': "NCCS",
         'student_city': "Kathmandu"
     }
