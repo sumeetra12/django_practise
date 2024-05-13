@@ -3,6 +3,11 @@ import datetime
 from django.shortcuts import render
 
 def home(request):
+
+    if request.method == 'POST':
+      check = request.POST['check']
+      print(check)
+
     date = datetime.datetime.now()
     isActive = True
     name = "Sumitra Maharjan"

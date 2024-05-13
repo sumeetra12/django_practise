@@ -13,6 +13,14 @@
         <h1>
             Welcome to our web page
         </h1>
+
+        <form action="/home/" method="POST">
+            {% csrf_token %}
+            <input type="text" name="check">
+            <button>Send</button>
+        </form>
+
+        
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem numquam, asperiores enim aliquam officiis nesciunt, consequuntur optio commodi veniam eveniet necessitatibus provident qui? Maxime aperiam nisi, dolore voluptas id autem recusandae magni alias libero dignissimos, modi quo quisquam ipsa eligendi nobis, neque quia molestias maiores ea quidem. Voluptates, vel quisquam.
         </p>
