@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Employee
+from .models import Employee,Testimonial
 
 
 # Register your models here.
@@ -11,4 +11,5 @@ class EmpAdmin(admin.ModelAdmin):
     list_filter=('working', 'department')
 
 admin.site.register(Employee, EmpAdmin)
+admin.site.register(Testimonial)
 
