@@ -8,3 +8,6 @@ class Employee(models.Model):
     address = models.CharField(max_length=150)
     working = models.BooleanField(default=True)
     department = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
