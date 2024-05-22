@@ -9,5 +9,6 @@ urlpatterns = [
     path('update-emp/<int:emp_id>', update_emp),
     path('do-update-emp/<int:emp_id>', do_update_emp),
     path('testimonials/', testimonials),
+    path('feedback/', feedback),
 
 ]
